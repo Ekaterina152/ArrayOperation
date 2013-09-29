@@ -45,13 +45,13 @@ function mymin(v){
 
 }
 
-function mysum(b) {
+function mysum(d) {
 // summa
 
   var a = new Array(10), sum = 0;   //создаём массив и начальное значение суммы
     a = []; // сохраняем новые значения
-    for (var i=0; i < a.length; i++ ){ //выполняем цикл
-        sum += a[i]  ;      //складываем все числа
+    for (var i=0; i < d.length; i++ ){ //выполняем цикл
+        sum += d[i]  ;      //складываем все числа
     }
     return sum   //возвращаем сумму
 
@@ -59,12 +59,12 @@ function mysum(b) {
 }
 
 
-function mymul(b){
+function mymul(d){
 // произведение
     var a = new Array(10), mul = 1;  //создаём массив и начальное значение произведения
     a = []; // сохраняем новые значения
-    for (var i=0; i < a.length; i++ ){   //выполняем цикл
-       mul *= a[i]  ; //перемножаем числа
+    for (var i=0; i < d.length; i++ ){   //выполняем цикл
+       mul *= d[i]  ; //перемножаем числа
     }
     return mul  //возвращаем произведение
 
