@@ -48,18 +48,12 @@ function mymin(v){
 function mysum(b) {
 // summa
 
-  var a = new Array(10), sum = 0;
-    a = new Array(1,2,3);  // а.length == 3 (определены элементы 0–2)
-    a = [4, 5];             // а.length == 2 (определены элементы 0 и 1)
-    console.log([a]) ;
-    console.log([sum]) ;
-    for (var i=0; i < b.length; i++ ){
-        console.log([i]);
-        sum += b[i]  ;
-        console.log([sum]);
-
+  var a = new Array(10), sum = 0;   //создаём массив и начальное значение суммы
+    a = []; // сохраняем новые значения
+    for (var i=0; i < b.length; i++ ){ //выполняем цикл
+        sum += b[i]  ;      //складываем все числа
     }
-    return sum
+    return sum   //возвращаем сумму
 
 
 }
@@ -67,18 +61,12 @@ function mysum(b) {
 
 function mymul(b){
 // произведение
-    var a = new Array(10), mul = 1;
-    a = new Array(1,2,3);    // а.length == 3 (определены элементы 0–2)
-    a = [4, 5];               // а.length == 2 (определены элементы 0 и 1)
-    console.log([a]) ;
-    console.log([mul]) ;
-    for (var i=0; i < b.length; i++ ){
-        console.log([i]);
-       mul *= b[i]  ;
-        console.log([mul]);
-
+    var a = new Array(10), mul = 1;  //создаём массив и начальное значение произведения
+    a = []; // сохраняем новые значения
+    for (var i=0; i < b.length; i++ ){   //выполняем цикл
+       mul *= b[i]  ; //перемножаем числа
     }
-    return mul
+    return mul  //возвращаем произведение
 
 
 }
