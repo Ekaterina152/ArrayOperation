@@ -49,8 +49,8 @@ function mysum(b) {
 // summa
 
   var a = new Array(10), sum = 0;
-    a = new Array(1,2,3);
-    a = [4, 5];
+    a = new Array(1,2,3);  // а.length == 3 (определены элементы 0–2)
+    a = [4, 5];             // а.length == 2 (определены элементы 0 и 1)
     console.log([a]) ;
     console.log([sum]) ;
     for (var i=0; i < b.length; i++ ){
