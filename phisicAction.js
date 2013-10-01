@@ -37,12 +37,23 @@ function mysort(v){
 
 function mymax(v){
 //    return r.max()
-
+    var m= v[0]     // создаём массив
+    for (var i=0; i <= v.length-1; i++)  //выполняем цикл
+    { if (v[i] > m)      // ищем максимальное число
+        m=v[i]          //сохраняем максимальное число в переменную m
+    }
+    return m         // возвращаем m
 }
 
 function mymin(v){
 //    return r.min()
 
+    var m= v[0]        // создаём массив
+    for (var i=0; i <= v.length-1; i++)  //выполняем цикл
+    { if (v[i] < m )     // ищем мнимальное число
+        m= v[i]        //сохраняем минимальное число в переменную m
+    }
+    return m   // возвращаем m
 }
 
 function mysum(d) {
